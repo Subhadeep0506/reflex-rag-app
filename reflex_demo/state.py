@@ -23,9 +23,9 @@ class State(rx.State):
     # The current chat name.
     current_chat = "Intros"
     url: str = (
-        "https://api-rag-3pg2.onrender.com/query"  # "https://qualified-tera-subhadeep-none-3914cdad.koyeb.app/"
+        "https://qualified-tera-subhadeep-none-3914cdad.koyeb.app/query" #"https://api-rag-3pg2.onrender.com/query"
     )
-
+    
     # The current question.
     question: str
 
@@ -92,7 +92,7 @@ class State(rx.State):
         # Clear the input and start the processing.
         self.processing = True
         yield
-        
+
         # Build the messages.
         messages = [
             {

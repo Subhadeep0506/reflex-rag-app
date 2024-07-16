@@ -83,7 +83,7 @@ def action_bar() -> rx.Component:
                             rx.cond(
                                 State.processing,
                                 loading_icon(height="1em"),
-                                rx.text("Send"),
+                                rx.text("Send", font_family="Ubuntu"),
                             ),
                             type="submit",
                         ),
@@ -99,6 +99,7 @@ def action_bar() -> rx.Component:
                 text_align="center",
                 font_size=".75em",
                 color=rx.color("mauve", 10),
+                font_family="Ubuntu",
             ),
             rx.logo(margin_top="-1em", margin_bottom="-1em"),
             align_items="center",
