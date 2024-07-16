@@ -1,7 +1,7 @@
 name: reflex-chat-repository-dispatch
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 jobs:
   test:
     name: reflex-chat-repository-dispatch
@@ -11,6 +11,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.TOKEN }}
-          repository: reflex-dev/reflex-hosting
+          repository: Subhadeep0506/reflex-rag-app
           event-type: push
           client-payload: '{"repo": "${{ github.repository }}", "sha": "${{ github.sha }}", "deployment-key": "chat"}'
